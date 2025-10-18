@@ -1,1 +1,15 @@
-spring.application.name=config-server
+spring:
+  application:
+    name: config-server
+cloud:
+    server:
+      git:
+        uri: https://github.com/Enoapo3/Cursor-Proje
+        default - label: main
+        search-paths:
+        -configurations:
+        -configurations/{application}
+      
+server:
+  port: 8787
+
