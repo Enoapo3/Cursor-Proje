@@ -1,2 +1,6 @@
 datasource:
-  url: localhost:5432
+  url: localhost:5433
+
+eureka:
+  service-url:
+    defaultZone: http://localhost:8761/eureka
